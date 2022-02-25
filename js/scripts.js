@@ -48,15 +48,19 @@
             function addListItem(pokemon){
               let pokemonList = document.querySelector(".pokemon-list");
               let listpokemon = document.createElement("li");
-              let button = document.createElement("button");addEventListener("click", function() {console.log(pokemon)});
+              //In your addListItem() function, add an event listener to the button you created. It should listen to a click. As for its event handler function, call the showDetails function there, passing the pokemon object as a parameter when a Pokémon is clicked.//
+              let button = document.createElement("button");
               button.innerText = pokemon.name;
               button.classList.add("button-class");
               listpokemon.appendChild(button);
               pokemonList.appendChild(listpokemon);
+              button.addEventListener("click", () =>{
+                showDetails(pokemon);
+              });
             }
 
             function showDetails(pokemon){
-              console.log(pokemonRepository);
+              console.log(pokemon);
             }
           
           
@@ -72,6 +76,7 @@
           
           console.log(pokemonRepository.getAll());
           
-          pokemonRepository.getAll().forEach(function (pokemon) {
+          pokemonRepository.getAll().forEach(function(pokemon){
             pokemonRepository.addListItem(pokemon);
-          });
+          }
+        );
