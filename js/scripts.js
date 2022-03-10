@@ -46,6 +46,9 @@
         })
       }  
       
+      function showModal (pokemon) {
+        let modal = item.name
+      }
       
               function loadDetails(item) {
               let url = item.detailsUrl;
@@ -59,10 +62,30 @@
                 console.error(e);
               });
             }
-            function showDetails(pokemon) {
-              pokemonRepository.loadDetails(pokemon).then(function () {
-                console.log(pokemon);
-            });
+            function showDetails(item) {
+              pokemonRepository.loadDetails(item).then(function () {
+                showModal(item);
+              
+                function showModal(item) { 
+                  let modalBody = $(".modal-body");
+                  let modalTitle = $(".modal-title");
+                    
+                  modalTitle.empty ();
+                  modalBody.empty ();
+                  
+                  let nameElement = $ ("<p> " + "Name : " + item.name + "</p> ");
+                  
+                  let imageElement = document.createElement('img');
+                  imageElement.setAttribute ("src", item.imageUrl);
+                  
+                  let heightElement = $ ("<p> " + "Height : " + item.height + "</p> ")
+                  
+                  modalTitle.append(nameElement);
+                  modalBody.append(imageElement);
+                  modalBody.append(heightElement);    
+                 
+                
+            
           }        
             return {
               add: add,
@@ -70,7 +93,8 @@
               addListItem: addListItem,
               loadList: loadList,
               loadDetails: loadDetails,
-              showDetails: showDetails
+              showDetails: showDetails,
+              showModal : showModal
             };
           })();  
           
@@ -80,4 +104,4 @@
           });
         });
 
-       
+       }})

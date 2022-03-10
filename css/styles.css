@@ -1,3 +1,7 @@
+html, 
+body {
+  font-family: Arial, sans-serif;
+}
 
 .button-class {
     background-color: #4c65ae; /* Green */
@@ -16,3 +20,4 @@
     color: white;
     border: 2px solid #4c65ae;
   }
+  
