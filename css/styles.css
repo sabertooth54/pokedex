@@ -20,4 +20,6 @@ body {
     color: white;
     border: 2px solid #4c65ae;
   }
-  
+ .hide {
+   display: none;
+ } 
