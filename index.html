@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Pokedex</title>
         <link rel="stylesheet" type="text/css" href="css/styles.css">
+        
     </head>
     <body>
         
@@ -13,10 +14,19 @@
     
 
     <div id='modal-container'></div>
+        <div class='modal'>
+            <button class='modal-close'>Close</button>
+            <h1>Modal title</h1>
+            <p>Modal text</p>       
+      </div>
 
     <ul class="pokemon-list"></ul>
     
-        
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+    crossorigin="anonymous"></script> 
+
         <script src="js/scripts.js"></script>
         <script src="js/promise-polyfill.js"></script>
         <script src="js/fetch-polyfill.js"></script>

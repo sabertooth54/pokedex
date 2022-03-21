@@ -78,7 +78,7 @@ let pokemonRepository = (function () {
     loading.classList.add("hide");
   }
   //added new function
-  function showModal() {
+  function showModal(item) {
     let modalBody = $(".modal-body");
     let modalTitle = $(".modal-title");
     
@@ -96,6 +96,7 @@ let pokemonRepository = (function () {
     modalBody.append(imageElement);
     modalBody.append(heightElement);
 
+    console.log (item);
 }
   
 
