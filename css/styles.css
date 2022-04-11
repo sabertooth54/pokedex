@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.button-class {
+button.button-class {
     background-color: #4c65ae; /* Green */
     border: none;
     color: white;
@@ -20,60 +20,42 @@ body {
     color: white;
     border: 2px solid #4c65ae;
   }
-#modal-container {
-  position: fixed;
-  padding: 20px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgb(0, 0, 0, 0.5);
 
-  /*shows it above other content */
-  z-index: 999;
-
-  /* allows if the screen is not big enough*/
-  overflow: auto;
-
-  /*this styling centers the modal*/
-  display:grid;
-  text-align: center;
-}
  
 
-.modal-title h2 {
-  margin-top: 0;
+  header{
+    font-size:2em;
+    padding:10px;
+    text-align:center
 }
 
-.modal-body {
-  margin: auto;
-  display: inline-block;
-  box-sizing: border-box;
-  background: #fff;
-  padding: 15px;
-  width: 100%;
-  max-width: 700px;
-  text-align: left;
-
-}
-/* button to exit out of modal*/
-.modal-close {
-  float: right;
-  -webkit-apperance: none;
-  border: 0;
-  background: none;
-  color: #777;
-  text-decoration: underline;
-
-
-}
-.modal-body p {
-  margin-bottom: 0;
-
+body
+{background-color:rgb(168, 147, 180);
+    color:var(--primary-color);
+    font-size:2rem
 }
 
-*/I would love to have Pikachu chillin in my App but not sure how to add him/style him in CSS*/
-.pokemon-modal-image {
+h1{
+    text-align:center;
+    padding:10px
+}
 
+p{
+    text-align:center
+}
+.pokemon-modal-image{
+    width:100%
+}
+
+nav{
+    background-color:#add8e6
+}
+
+button.btn-primary{
+  text-transform:capitalize;
+  margin:10px;
+  min-width:200px;
+  border-radius: 50px;
+  color: red;
+  
 }

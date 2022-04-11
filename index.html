@@ -4,40 +4,79 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Pokedex</title>
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
         
+        
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <title>Pokedex App</title>
     </head>
     <body>
-        
-    <h1>Pokedex</h1>
+        <header class="page-header">
+            <nav class="navbar">
+              <a class="navbar-brand" href="index.html">
+                <img src="./img/pokemon_logo_PNG12.png" width="50" height="50" class="d-inline-block align-top" alt="" />
+              </a>
+            <!-- Search Form within Navigation Bar -->
+            <!--Aria has been added for screen readers-->
+             <form class="form-inline">
+         <input class="form-control rounded" id="myInput" type="search" placeholder="Search for Pokemon..." aria-label="Search"/>
+            </form>
+            </nav>
+          </header>
      
     
+    <main>
+        <div id='modal-container'></div>
+          <div class="row">
+            <div class="col">
+              <ul class="list-group list-unstyled flex-row flex-wrap w-100 just-content: center" data-toggle="modal" data-target="#Pokemon"></ul>
+              <div class="modal fade" id="Pokemon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="col-12 modal-title text-center text-capitalize" id="exampleModalLabel"></h5>
+                    </div>
+                          <div class="modal-body text-capitalize">
+                               ...
+                          </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                 Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <div id='modal-container'></div>
-        <div class='modal'>
-            <div class="modal-title">
-            <div class='modal-body'>
-            <div class="pokemon-modal-image">
-            <button class='modal-close'>Close</button>
-            <h1>pokemon-list</h1>
-            <p>Modal text</p>
-        </div>       
-      </div>
-    </div>
-</div>
 
-
-    <ul class="pokemon-list"></ul>
+    
+    <list-group class="pokemon-list"></list>
     
     <script
-    src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"></script> 
+
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+
+    <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
 
         <script src="js/scripts.js"></script>
         <script src="js/promise-polyfill.js"></script>
         <script src="js/fetch-polyfill.js"></script>
-        <script src="js/Untitled.js"></script>
+        
 
     
    
