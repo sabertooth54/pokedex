@@ -1,0 +1,51 @@
+body,
+html {
+  font-family: Arial, sans-serif;
+}
+button.button-class {
+  background-color: #4c65ae;
+  border: none;
+  color: #fff;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: grey;
+  color: #fff;
+  border: 2px solid #4c65ae;
+}
+header {
+  font-size: 2em;
+  padding: 10px;
+  text-align: center;
+}
+body {
+  background-color: #a893b4;
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+p {
+  text-align: center;
+}
+.pokemon-modal-image {
+  width: 100%;
+}
+nav {
+  background-color: #add8e6;
+}
+button.btn-primary {
+  text-transform: capitalize;
+  margin: 10px;
+  min-width: 200px;
+  border-radius: 50px;
+  color: red;
+}
