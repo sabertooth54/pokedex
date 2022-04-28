@@ -49,3 +49,7 @@ button.btn-primary {
   border-radius: 50px;
   color: red;
 }
+
+.pokemon-list {
+  list-style: none;
+}
