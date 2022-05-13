@@ -1,61 +1,77 @@
-html, 
+html,
 body {
   font-family: Arial, sans-serif;
 }
 
 button.button-class {
-    background-color: #4c65ae; /* Green */
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: grey;
-    color: white;
-    border: 2px solid #4c65ae;
-  }
-
- 
-
-  header{
-    font-size:2em;
-    padding:10px;
-    text-align:center
+  background-color: #4c65ae;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+  border: 2px solid #4c65ae;
 }
 
-body
-{background-color:rgb(168, 147, 180);
-    color:var(--primary-color);
-    font-size:2rem
+header {
+  font-size: 2em;
+  padding: 10px;
+  text-align: center;
 }
 
-h1{
-    text-align:center;
-    padding:10px
+body {
+  background-color: rgb(168, 147, 180);
+  color: var(--primary-color);
+  font-size: 2rem;
 }
 
-p{
-    text-align:center
-}
-.pokemon-modal-image{
-    width:100%
+h1 {
+  text-align: center;
+  padding: 10px;
 }
 
-nav{
-    background-color:#add8e6
+p {
+  text-align: center;
+}
+.pokemon-modal-image {
+  width: 100%;
 }
 
-button.btn-primary{
-  text-transform:capitalize;
-  margin:10px;
-  min-width:200px;
+nav {
+  background-color: #add8e6;
+}
+
+button.btn-primary {
+  text-transform: capitalize;
+  margin: 10px;
+  min-width: 200px;
   border-radius: 50px;
   color: red;
-  
+}
+
+#modal-container {
+  display: none;
+}
+
+#modal-container.is-visible {
+  display: block;
+}
+
+.modal {
+  margin: auto;
+  display: inline-block;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 15px;
+  width: 100%;
+  max-width: 700px;
+  text-align: left;
 }

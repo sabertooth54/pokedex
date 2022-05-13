@@ -73,10 +73,13 @@ let pokemonRepository = (function () {
   }
   function closeModal(item) {
     const closeBtn = document.querySelector("btn btn-primary");
+    closeBtn.classList.add("modal-close");
     closeBtn.addEventListener("click", closeModal);
   }
 
   function showModal(item) {
+    let modalContainer = $("#modal-container");
+    modalContainer.classList.add("is-visible");
     let modalBody = $(".modal-body");
     let modalTitle = $(".modal-title");
 
@@ -99,6 +102,14 @@ let pokemonRepository = (function () {
     modalBody.append(pokemonHeight); // pokemonHeight is displayed in the body of the modal
     modalBody.append(pokemonWeight); // pokemonWeight is displayed in the body of the modal
     modalBody.append(pokemonAbilities); // pokemonDetails are displayed in the body of the modal
+    document.querySelector("#show-modal").addEventListener("click", () => {
+      showModal();
+    });
+  }
+
+  function hideModal() {
+    let modalContainer = document.querySelector("#modal-container");
+    modalContainer.classList.remove("is-visible");
   }
 
   return {
